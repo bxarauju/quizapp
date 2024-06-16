@@ -168,3 +168,13 @@ function adicionarEventoInputs(){
     })
 }
 
+async function iniciar(){
+    alterarAssunto()
+    await buscarPerguntas()
+    montarPergunta()
+    adicionarEventoInputs()
+
+    
+}
+
+iniciar()
