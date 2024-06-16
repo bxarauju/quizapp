@@ -33,3 +33,17 @@ function alterarAssunto() {
     iconeImg.setAttribute("alt", `Icone de ${assunto}`)
     assuntoTitulo.innerText = assunto
 }
+
+async function buscarPerguntas() {
+    const urlDados = "../../data.json"
+
+    await fetch(urlDados).then(resposta => resposta.json()).then(dados => {
+        dados.quizzes.forEach(dado => {
+            if (dado.title === assunto) {
+                quiz = dado
+            }
+        })
+    })
+
+
+}
