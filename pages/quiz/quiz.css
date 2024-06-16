@@ -210,3 +210,45 @@ main {
        color: var(--white);
     }
 }
+
+.alternativas input {
+    display: none;
+}
+
+.alternativas div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+}
+
+.alternativas div span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: var(--bg-span);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-span);
+    flex-shrink: 0;
+}
+
+.alternativas button {
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    background: var(--purple);
+    color: var(--white);
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.alternativas button:hover {
+    background: var(--purple-hover);
+    cursor: pointer;
+}
+
