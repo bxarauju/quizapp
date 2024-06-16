@@ -156,3 +156,57 @@ main {
     background: var(--purple);
     border-radius: 999px;
 }
+
+.alternativas form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+
+.alternativas label {
+    display: block;
+    background: var(--button-bg);
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
+
+.alternativas label:hover {
+    & span {
+        background: var(--bg-acessibilidade);
+        color: var(--purple);
+    }
+}
+
+.alternativas label:has(input:checked){
+    outline: 3px solid var(--purple);
+
+    & span {
+        background: var(--purple);
+        color: var(--white)
+    }
+}
+
+.alternativas label#correta{
+    outline: 3px solid var(--green);
+
+    & span {
+       background: var(--green);
+       color: var(--white);
+    }
+}
+
+.alternativas label#errada{
+    outline: 3px solid var(--red);
+
+    & span {
+       background: var(--red);
+       color: var(--white);
+    }
+}
