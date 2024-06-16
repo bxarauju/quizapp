@@ -11,3 +11,14 @@ let pergunta = 1
 let resposta = ""
 let idInputResposta = ""
 let respostaCorretaId = ""
+
+
+botaoTema.addEventListener("click", () => {
+    trocarTema(body, botaoTema)
+})
+
+verificarTema(body, botaoTema)
+
+
+
+console.log(assunto.toLowerCase())
